@@ -93,8 +93,7 @@ extension FileHandle {
 // - Message(uri: "someuri")
 // - {"jsonrpc":"2.0","id":1,"result":{"uri":"someuri"}}
 // - Content-Length: 51\r\n\r\n{"jsonrpc":"2.0","id":1,"result":{"uri":"someuri"}}
-// - write that to an outgoing buffer
-// - flush that buffer to a FileHandle as it is writable
+// - write the message to a FileHandle
 
 struct Message {
     let uri: String
